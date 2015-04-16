@@ -1,12 +1,12 @@
-#show-contact {
+.tasks_form {
     display: none;
 }
 
-.contact {
+.name_of_list {
     cursor: pointer;
     color: #0088cc;
 }
 
-.contact:hover {
+.name_of_list:hover {
     text-decoration: underline;
 }

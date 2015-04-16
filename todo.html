@@ -10,29 +10,32 @@
   <body>
     <div class="container">
       <h1>To do</h1>
+      <div class="container">
+        <div class="col-md-6">
 
       <h3>Lists</h3>
         <ul id="list_of_lists">
         </ul>
-      <h3>Home</h3>
-        <ul>
+      <h3 class="current_task"></h3>
+        <ul id="list_of_tasks">
 
         </ul>
-
+      </div>
+      </div>
       <h3>Create a list</h3>
         <form id="lists">
           <label for="new_list">Name</label>
           <input id="new_list" type="text">
           <button type="submit" class="btn btn-success">Create</button>
         </form>
-
-      <h3>Add a task</h3>
-        <form id="tasks">
-          <label for="new_task">Description</label>
-          <input id="new_task" type="text">
-          <button type="submit" class="btn btn-primary">Add</button>
-        </form>
-
+        <div class="tasks_form">
+          <h3>Add a task for <span class="current_task"></span></h3>
+            <form id="tasks">
+              <label for="new_task">Description</label>
+              <input id="new_task" type="text">
+              <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
     </div>
   </body>
 </html>
